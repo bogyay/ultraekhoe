@@ -1,0 +1,316 @@
+/* Alapvető stílusok */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #000;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navigációs sáv */
+header {
+  background-color: #1e1e2f;
+  padding: 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-container ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-container a {
+  color: #fff;
+  font-size: 1rem;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-container a:hover {
+  background-color: #6a1b9a;
+  border-radius: 5px;
+}
+
+/* Landing oldal - fő bevezető szekció */
+.landing {
+  height: 100vh;
+  background: linear-gradient(135deg, #1e1e2f, #6a1b9a);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: backgroundGlow 5s infinite alternate;
+}
+
+.title-container h1 {
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: 0 0 10px #6a1b9a, 0 0 20px #9c27b0;
+}
+
+.title-container p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  color: #ddd;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #6a1b9a;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+button:hover {
+  background: #9c27b0;
+  transform: scale(1.1);
+}
+
+/* Album szekció */
+#album, #bio, #gallery, #contact {
+  padding: 50px;
+  background: #121212;
+}
+
+#album h2, #bio h2, #gallery h2, #contact h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #f2f2f2;
+  text-align: center;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.track p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+audio {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+/* Galéria szekció */
+.gallery-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.gallery-item {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bio szekció */
+.bio-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bio-image {
+  width: 200px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.bio-content p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #ccc;
+  max-width: 600px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #1e1e2f;
+  font-size: 0.8rem;
+  color: #bbb;
+}
+
+footer a {
+  color: #6a1b9a;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Animációk */
+@keyframes backgroundGlow {
+  0% {
+      background: linear-gradient(135deg, #1e1e2f, #6a1b9a);
+  }
+  100% {
+      background: linear-gradient(135deg, #1e1e2f, #9c27b0);
+  }
+}
+
+/* Általános stílusok */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.landing {
+  text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 50px 20px;
+}
+
+.landing h1 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+.title-container p {
+  margin: 10px 0 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #f90;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e80;
+}
+
+section {
+  padding: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 10px;
+}
+
+.gallery-item img {
+  width: 100%;
+  max-width: 200px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+/* Telefon nézet (max szélesség: 768px) */
+@media screen and (max-width: 768px) {
+  .nav-container {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .landing {
+      padding: 30px 10px;
+  }
+
+  .landing h1 {
+      font-size: 2em;
+  }
+
+  .gallery-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .gallery-item img {
+      max-width: 90%;
+  }
+
+  .bio-content {
+      text-align: center;
+  }
+
+  .bio-image {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+  }
+
+  footer p {
+      font-size: 0.9em;
+  }
+}

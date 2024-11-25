@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekhoe - Ultra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Ekhoe</div>
+            <nav>
+                <ul>
+                    <li><a href="#album">Album</a></li>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Galéria</a></li>
+                    <li><a href="#contact">Kapcsolat</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="landing">
+        <div class="title-container">
+            <h1>ULTRA</h1>
+            <p>Az új album Ekhoe-tól</p>
+            <button id="play-btn">Hallgass bele</button>
+        </div>
+    </div>
+
+    <section id="album">
+        <h2>Tracklist</h2>
+        <div class="track">
+            <p>1. Kezdő Dal</p>
+            <audio controls>
+                <source src="music/kezdo_dal.mp3" type="audio/mpeg">
+                A böngésződ nem támogatja a lejátszást.
+            </audio>
+        </div>
+        <div class="track">
+            <p>2. Második Dal</p>
+            <audio controls>
+                <source src="music/masodik_dal.mp3" type="audio/mpeg">
+                A böngésződ nem támogatja a lejátszást.
+            </audio>
+        </div>
+    </section>
+
+    <section id="bio">
+        <h2>Ismerd meg Ekhoe-t</h2>
+        <div class="bio-content">
+            <img src="ekhoe.jpg" alt="Ekhoe" class="bio-image">
+            <p>Ekhoe legújabb albuma, az *Ultra*, egy új korszakot nyit meg a modern zenében.</p>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Galéria</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="music/album.png" alt="Ekhoe Album Art">
+            </div>
+            <div class="gallery-item">
+                <img src="music/performance.png" alt="Ekhoe Performance">
+            </div>
+            <div class="gallery-item">
+                <img src="music/live.png" alt="Ekhoe Live">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Kapcsolat</h2>
+        <p>Ha bármilyen kérdésed van, keresd fel az alábbi hivatkozásokat:</p>
+        <ul>
+            <li><a href="mailto:info@ekhoe.com">Email: info@ekhoe.com</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Spotify</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Kövess minket: 
+            <a href="#">Instagram</a> | 
+            <a href="#">Spotify</a> | 
+            <a href="#">YouTube</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
